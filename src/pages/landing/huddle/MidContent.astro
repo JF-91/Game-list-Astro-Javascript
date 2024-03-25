@@ -1,0 +1,131 @@
+---
+import screenMockups from '../../../assets/images/screen-mockups.svg';
+import iconComunity from '../../../assets/images/icon-communities.svg';
+import iconMessage from '../../../assets/images/icon-messages.svg';
+import ilustrationGrowTogether from '../../../assets/images/illustration-grow-together.svg';
+import ilustrationFlowingConversation from '../../../assets/images/illustration-flowing-conversation.svg';
+import ilustrationYourUsers from '../../../assets/images/illustration-your-users.svg';
+---
+
+<div class="main-container container">
+    <section class="main-container sub-container">
+        <div class="headline sub-headline">
+            Ready To Build Your community?
+        </div>
+
+        <button class="btn-big-pink">Get Started For Free</button>
+    </section>
+
+    <div>
+        <img class="main-img" src={screenMockups.src} alt="screen mockups">
+    </div>
+
+    <section class="grid-2c item-container">
+        <div class="info-right">
+            <figure>
+                <img src={iconComunity.src} alt="comunity">
+            </figure>
+
+            <div class="headline xl">
+                1.4k+
+            </div>
+
+            <div class="headline info">
+                Comunities Formed
+            </div>
+        </div>
+
+        <div class="info-left">
+            <figure>
+                <img src={iconMessage.src} alt="message">
+            </figure>
+
+            <div class="headline xl ">
+                2.7m+
+            </div>
+
+            <div class="headline info">
+                Messages Sent
+            </div>
+        </div>
+    </section>
+
+    <section class="grid-2c item-container">
+        <div>
+            <div class="headline sub-headline">
+                Grow Together
+            </div>
+
+            <div class="text">
+                Generate meaningful discussions with your audience and build a strong, loyal community. Think of the insightful conversations you miss out on with a feedback form. 
+            </div>
+        </div>
+
+        <div>
+            <img src={ilustrationGrowTogether.src} alt="grow together">
+        </div>
+    </section>
+
+    <section class="grid-2c item-container">
+        <div>
+            <img src={ilustrationFlowingConversation.src} alt="conversation">
+        </div>
+
+        <div>
+            <div class="headline sub-headline">
+                Flowing Conversations
+            </div>
+
+            <div class="text">
+                You wouldn't paginate a conversation in real life, so why do it online? Our threads have just-in-time loading for a more natural flow.
+            </div>
+        </div>
+    </section>
+
+    <section class="grid-2c item-container">
+        <div>
+            <div class="headline sub-headline">
+                Your Users
+            </div>
+
+            <div class="text">
+                It takes no time at all to integrate Huddle with your app's authentication solution. This means, once signed in to your app, your users can start chatting immediately.
+            </div>
+        </div>
+
+        <div>
+            <img src={ilustrationYourUsers.src} alt="users">
+        </div>
+    </section>
+
+    <section class="main-container sub-container">
+        <div class="headline sub-headline">
+            Ready To Build Your community?
+        </div>
+
+        <button class="btn-big-pink">Get Started For Free</button>
+    </section>
+</div>
+
+<style lang="scss">
+@import '../../../assets/sass/main.scss';
+
+.container {
+    margin-bottom: 200px;
+}
+
+.sub-container {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    align-items: center;
+}
+
+.sub-container {
+    position: relative;
+   
+}
+
+
+
+</style>

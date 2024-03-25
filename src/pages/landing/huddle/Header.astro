@@ -1,0 +1,35 @@
+---
+import logo from '../../../assets/images/logo.svg'
+---
+
+<header class="hero">
+    <nav class="hero-nav container">
+        <figure class="hero-logo">
+            <img src={logo.src} alt="logo" class="hero-huddle">
+        </figure>
+
+      <button class="btn-gosht">Try it Free</button>
+    </nav>
+
+</header>
+
+<style lang="scss">
+@import '../../../assets/sass/main.scss';
+
+.hero {
+   position: fixed;
+}
+
+.hero-nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+    padding: 0 20px;
+    width: 100vw;
+
+    
+}
+
+
+</style>

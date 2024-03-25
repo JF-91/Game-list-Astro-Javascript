@@ -1,0 +1,59 @@
+@import 'variables';
+// Small devices
+@mixin sm {
+  @media (min-width: #{$screen-sm-min}) {
+      @content;
+  }
+}
+
+// Medium devices
+@mixin md {
+  @media (min-width: #{$screen-md-min}) {
+      @content;
+  }
+}
+
+// Large devices
+@mixin lg {
+  @media (min-width: #{$screen-lg-min}) {
+      @content;
+  }
+}
+
+// Extra large devices
+@mixin xl {
+  @media (max-width: #{$screen-xl-min}) {
+      @content;
+  }
+}
+
+
+
+
+////////////////////////////////////////////////////////////////
+@mixin max-sm {
+    @media (max-width: #{$screen-sm-max}) {
+        @content;
+    }
+  }
+  
+  // Medium devices
+  @mixin max-md {
+    @media (max-width: #{$screen-md-max}) {
+        @content;
+    }
+  }
+  
+  // Large devices
+  @mixin max-lg {
+    @media (mac-width: #{$screen-lg-max}) {
+        @content;
+    }
+  }
+  
+  // Extra large devices
+  @mixin max-xl {
+    @media (max-width: #{$screen-xl-max}) {
+        @content;
+    }
+  }

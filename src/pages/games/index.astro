@@ -1,0 +1,33 @@
+---
+import Layout from '../../layouts/Layout.astro';
+---
+
+<Layout title="Games">
+    <div class="container">
+        <ul>
+            <li>
+                <a href="/games/tictactoe">TicTacToe Game</a>
+            </li>
+        </ul>
+    </div>
+</Layout>
+
+<style lang="scss">
+@import '../../assets/sass/main.scss';
+
+.container {
+    height: 100vh;
+    width: 100%;
+    color: $white;
+    background-color: $black;
+
+    a {
+        text-decoration: underline;
+        &:hover {
+            text-decoration: none;
+            color: aqua;
+        }
+    }
+    
+}
+</style>

@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,400;0,500;0,600;1,700;1,900&family=Poppins:ital,wght@0,400;0,800;0,900;1,500;1,600;1,700&display=swap');
+
+
+//fonts
+$figtree: 'Figtree', sans-serif;
+$poppins: 'Poppins', sans-serif;
+
+$screen-sm-min: 576px;
+$screen-md-min: 768px;
+$screen-lg-min: 992px;
+$screen-xl-min: 1200px;
+
+
+$screen-sm-max: $screen-md-min - 1;
+$screen-md-max: $screen-lg-min - 1;
+$screen-lg-max: $screen-xl-min - 1;
+
+//backgrounds 
+$primary-pink: hsl(322, 100%, 66%);
+$primary-light-pink: hsl(321, 100%, 78%);
+$primary-light-red:  hsl(0, 100%, 63%);
+$bgTictTacToe: #F2F2F2;
+
+
+//neutral
+$neutral-very-dark-cyan: hsl(192, 100%, 9%);
+$neutral-very-pale-blue: hsl(207, 100%, 98%);
+$neutral-info: #808E9A;
+
+//colors
+$white: hsl(0, 0%, 100%);
+$black: hsl(0, 0%, 0%);
+$yellow: hsl(47, 88%, 63%);
+$grey:hsl(0, 0%, 50%);
+$light-pink: hsl(275, 100%, 97%);
+$grayish-purple: hsl(292, 16%, 49%);
+$dark-purple: hsl(292, 42%, 14%);
+
+//games colors
+$darkNavy : #1A2A33;
+$semiDarkNavy: #1F3641;
+$silver: #A8BFC9;
+$lightBlue: #31C3BD;
+$LightBlueHover: #65E9E4;
+$lightYellow: #F2B137;
+$lightYellowHover: #FFC860;
+
+
+//font size
+
+$font-xxl: 64px;
+$font-xl: 48px;
+$font-lg: 32px;
+$font-md: 24px;
+$font-sm: 18px;
+$font-xs: 16px;
+
+
+$headingLarge: 40px;
+$headingMedium: 24px;
+$headingSmall: 20px;
+$headingExtraSmall: 16px;
+$bodyGame: 14px;

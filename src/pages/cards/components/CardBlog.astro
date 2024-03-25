@@ -1,0 +1,67 @@
+---
+import ilustration from '../../../assets/images/illustration-article.svg';
+import avatar from '../../../assets/images/image-avatar.webp';;
+
+---
+<div class="card-container">
+	
+	<img src={ilustration.src} alt="ilustration">
+
+	<button class="btn-yellow">
+		Learning
+	</button>
+
+    <div>
+        Published 1 January 2024
+    </div>
+
+    <div class="headline h4">
+        HTML & CSS foundations
+    </div>
+
+    <div class="text-content">
+        These languages are the backbone of every website, desining structure, content, and presentation.
+    </div>
+
+    <div class="avatar-content">
+        <img class="image-avatar" src={avatar.src} alt="avatar" width="32px">
+        
+        <div class="headline h5">John Doe</div>
+    </div>
+	
+</div>
+
+<style lang="scss">
+@import '../../../assets/sass/main.scss';	
+
+.card-container {
+    box-sizing: border-box;
+    display: flex;
+	flex-direction: column;
+	width: 384px;
+    padding: 24px;
+	gap: 24px;
+    border-radius: 20px;
+    box-shadow: 10px 10px 0px 4px rgba(0,0,0,0.75);
+    background-color: $white;
+
+    @include max-sm {
+        width: 100%;
+        padding: 16px;
+        gap: 16px;
+        margin: 0 40px;
+    }
+}
+
+.text-content {
+    color: $grey;
+}
+
+
+.avatar-content {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+</style>

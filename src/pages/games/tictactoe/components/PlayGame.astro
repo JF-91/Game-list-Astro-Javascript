@@ -1,0 +1,137 @@
+---
+import iconX from '../../../../assets/images/icon-x.svg';
+import iconO from '../../../../assets/images/icon-o.svg';
+
+import iconOutlineX from '../../../../assets/images/icon-x-outline.svg';
+import iconOutlineO from '../../../../assets/images/icon-o-outline.svg';
+---
+
+<script>
+import TicTacToe from "../../../../js/tictactoe";
+
+const game = new TicTacToe();
+game.init();
+
+</script>
+
+<div id="pick-game" class="container" >
+    <div class="play-content">
+        <div class="logo-content">
+            <img src={iconX.src} alt="icon X" width="32">
+            <img src={iconO.src} alt="icon O" width="32">
+        </div>
+        
+        <div class="player-content">
+            <div class="heading">
+                Pick Player I's John Doe
+            </div>
+    
+            <div class="pick-buttons-content">
+                <button id="buton-x" class="play-button-tictactoe  transparent button-x">
+                    <img src={iconOutlineX.src} alt="icon outline X" width="32px">
+                </button>
+    
+                <button id="button-o" class="play-button-tictactoe button-o active">
+                    <img src={iconOutlineO.src} alt="icon outline O" width="32px">
+                </button>
+            </div>
+    
+            <div class="underHeading">
+                Remember: x Goes first
+            </div>
+        </div>
+    
+        <div class="start-player-content">
+            <button id="vs-cpu" class="new-game-tictactoe ">New Game (VS CPU)</button>
+    
+            <button id="vs-player" class="new-game-tictactoe new-game-tictactoe-light-blue">New Game (VS Player)</button>
+        </div>
+    </div>
+
+    <div class="start-game">
+
+    </div>
+</div>
+
+<style lang="scss">
+@import '../../../../assets/sass/main.scss';
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    padding: 0 40px;
+    justify-content: center;
+    align-items: center;
+    background-color: $darkNavy;
+    transition: opacity 0.5s ease-in-out;
+
+    &.hidden {
+        opacity: 0;
+    }
+
+}
+
+.play-content {
+    display: flex;
+    width: 460px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+    
+}
+
+.logo-content {
+    display: flex;
+    padding: 10px;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.player-content {
+    padding: 15px;
+    width: 100%;
+    border-radius: 15px;
+    background-color: $semiDarkNavy;
+    box-shadow: 4px 4px 0px 4px rgba(0,0,0,0.5);
+}
+
+.heading {
+    margin-bottom: 16px;
+    text-transform: uppercase;
+    font-size: 16px;
+    color: $silver;
+    text-align: center;
+    
+}
+
+.pick-buttons-content {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding: 3px 0;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    box-shadow: 4px 4px 0px 4px rgba(0,0,0,0.5);
+    border-radius: 15px;
+    background-color: $darkNavy;
+}
+
+.underHeading {
+    text-transform: uppercase;
+    color: $silver;
+    text-align: center;
+    font-size: $bodyGame;
+    
+}
+
+.start-player-content {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+</style>

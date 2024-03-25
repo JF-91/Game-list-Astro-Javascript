@@ -12,6 +12,10 @@
   "dependencies": {
     "@astrojs/check": "^0.3.4",
     "astro": "^4.0.8",
+    "boxicons": "^2.1.4",
     "typescript": "^5.3.3"
+  },
+  "devDependencies": {
+    "sass": "^1.69.6"
   }
 }

@@ -1,0 +1,142 @@
+---
+import backgroundPurple from '../../../assets/images/background-pattern-desktop.svg';
+import star from '../../../assets/images/icon-star.svg';
+import iconMinus from '../../../assets/images/icon-minus.svg';
+import iconPlus from '../../../assets/images/icon-plus.svg';
+---
+
+<div class="container">
+    <img src={backgroundPurple.src} alt="purple background" width="100%">
+
+    <div class="card-container">
+        <div class="card-content">
+            <div class="title">
+                <img src={star.src} alt="star icon" width="40px">
+
+                <div class="headline h1">
+                    FAQs
+                </div>
+            </div>
+
+            <div class="text-content">
+                <div class="text-content-item margin-bottom">
+                    <div class="title-content margin-bottom">
+                        <div class="headline h5">
+                            What is John R
+                        </div>
+    
+                        <img class="img-pointer" src={iconMinus.src} alt="icon minus" width="30px">
+                    </div>
+
+                    <div class="text margin-bottom">
+                        I'm John rios, a full stack software developer. I love technology and software development. 
+                    </div>
+                </div>
+
+                <div class="text-content-item margin-bottom">
+                    <div class="title-content margin-bottom">
+                        <div class="headline h5">
+                            Is Frontend developer?
+                        </div>
+    
+                        <img class="img-pointer" src={iconPlus.src} alt="icon minus" width="30px">
+                    </div>
+
+                    <div class="text margin-bottom">
+                       Yes
+                    </div>
+                </div>
+
+
+                <div class="text-content-item margin-bottom">
+                    <div class="title-content margin-bottom">
+                        <div class="headline h5">
+                            Can i use this projects for commercial use?
+                        </div>
+    
+                        <img class="img-pointer" src={iconPlus.src} alt="icon minus" width="30px">
+                    </div>
+
+                    <div class="text margin-bottom">
+                        yes.
+                    </div>
+                </div>
+
+                <div class="text-content-item margin-bottom">
+                    <div class="title-content margin-bottom">
+                        <div class="headline h5">
+                            How cain i get help with projects?
+                        </div>
+    
+                        <img class="img-pointer" src={iconPlus.src} alt="icon minus" width="30px">
+                    </div>
+
+                    <div class="text margin-bottom">
+                        yes.
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<style lang="scss">
+@import '../../../assets/sass/main.scss';
+
+.container {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+
+}
+
+.card-container {
+    position: absolute;
+    z-index: 20;
+    top: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.card-content {
+    display: grid; 
+    grid-template-columns:  minmax(20rem, 1fr); 
+    padding: 24px;
+    
+    border-radius: 16px;
+    -webkit-box-shadow: 2px 20px 67px -6px rgba(140,105,145,0.83);
+    -moz-box-shadow: 2px 20px 67px -6px rgba(140,105,145,0.83);
+    box-shadow: 2px 20px 67px -6px rgba(140,105,145,0.83);
+    background-color: $white;
+
+}
+
+.title {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 24px;
+}
+
+.title-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.margin-bottom {
+    margin-bottom: 24px;
+}
+
+.text {
+    max-width: 520px;
+    color: $grayish-purple;
+
+}
+
+.img-pointer {
+    cursor: pointer;
+}
+</style>
+

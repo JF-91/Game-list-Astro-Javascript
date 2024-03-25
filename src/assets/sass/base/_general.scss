@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,800;0,900;1,500;1,600;1,700&display=swap');
+@import 'variables';
+@import 'mixins';
+
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+    color: $neutral-very-dark-cyan;
+    background-color: $neutral-very-pale-blue;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+}
+
+input {
+    padding: 16px;
+    margin: 20px 20px 20px 0;
+    outline: none;
+    border: none;
+    border-radius: 6px;
+}
+
+
+img {
+    display: block;
+    height: auto;
+    max-width: 100%;
+    object-fit: cover;
+}
+
+
+.main-container {
+    margin: 0 auto;
+    padding: 120px;
+    max-width: 1440px;
+
+    @include max-md {
+        max-width: 768px;
+        padding: 80px;
+    }
+
+    @include max-sm {
+        max-width: 375px;
+        padding: 40px;
+    }
+}
+
+.grid-2c {
+    display: grid; 
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr)); 
+    gap: 60px; 
+}
+
+.item-container {
+    margin: 120px 0;
+}
+
+
+.headline {
+    font-size: $font-xl;
+    line-height: 72px;
+    font-weight: 800;
+    
+
+    @include max-lg {
+        font-size: $font-lg;
+        line-height: 56px;
+    }
+
+    @include max-md {
+        font-size: $font-md;
+        line-height: 40px;
+    }
+
+    @include max-sm {
+        font-size: $font-sm;
+        line-height: 32px;
+    }
+
+    &.xl {
+        font-size: 96px;
+        line-height: 144px;
+
+        @include max-md {
+            font-size: $font-lg;
+            line-height: 56px;
+        }
+
+       @include max-sm {
+           font-size: $font-md;
+       }
+    }
+
+    &.sub-headline {
+        font-size: 40px;
+        line-height: 60px;
+        @include max-sm {
+            font-size: $font-md;
+            line-height: 40px;
+        }
+    }
+
+    &.info {
+        font-size: $font-md;
+        line-height: 36px;
+        color: $neutral-info;
+
+        @include max-sm {
+            font-size: $font-sm;
+        }
+    }
+
+    &.h1 {
+        font-size: $font-xxl;
+        line-height: 96px;
+
+        @include max-sm {
+            font-size: $font-lg;
+            line-height: 56px;
+        }
+    }
+
+    &.h2 {
+        font-size: $font-xl;
+        line-height: 72px;
+        @include max-sm {
+            font-size: $font-md;
+            line-height: 40px;
+        }
+    }
+
+    &.h3 {
+        font-size: $font-lg;
+        line-height: 48px;
+        @include max-sm {
+            font-size: $font-md;
+            line-height: 40px;
+        }
+    }
+
+    &.h4 {
+        font-size: $font-md;
+        line-height: 36px;
+
+        @include max-sm {
+            font-size: $font-sm;
+            line-height: 28px;
+        }
+    }
+
+    &.h5 {
+        font-size: $font-sm;
+        line-height: 24px;
+
+        @include max-sm {
+            font-size: $font-xs;
+            line-height: 20px;
+        }
+    }
+
+    &.h6 {
+        font-size: $font-xs;
+        line-height: 20px;
+    }
+
+
+
+
+
+}
