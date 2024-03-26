@@ -18,14 +18,15 @@ class TicTacToe {
     }
 
     record(current){
-       
-      
+        if(current === 'x'){
+            this.dataSet.currentPlayer = current;
+        }
+        if(current === 'o'){
+            this.dataSet.currentPlayer = current;
+        }
+        
 
-        console.log(this.dataSet);
-        // return {
-        //     current: current,
-        //     opponent: current === 'x' ? 'o' : 'x'
-        // }
+        return this.dataSet
 
     }
 
